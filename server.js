@@ -121,8 +121,8 @@ app.post("/upload", upload.single("excel"), (req, res) => {
         if (!req.file) return res.status(400).send("No file uploaded");
 
         const deleteConfig = {
-            "invoice": "G,K,O,P,Q,R,U,Y,AC,AD,AG,AH,AI,AJ,AK,AL,AM,AN,AR,AS",
-            "invoice_ims": "G,K,O,P,Q,R,U,Y,AC,AD,AG,AH,AI,AJ,AK,AL,AM,AN,AR,AS",
+            "invoice": "G,K,O,P,Q,R,U,Y,AC,AD,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS",
+            "invoice_ims": "G,K,O,P,Q,R,U,Y,AC,AD,AG,AH,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS",
             "note": "G,L,Q,R,S,V,AA,AF,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,AX",
             "note_ims": "G,L,Q,R,S,V,AA,AF,AI,AJ,AK,AL,AM,AN,AO,AP,AQ,AR,AS,AT,AU,AV,AW,AX"
         };
